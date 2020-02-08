@@ -1,7 +1,9 @@
 ---
 layout: post
-title: First post!
-image: /img/hello_world.jpeg
+title: Sample Post
+#image: /img/hello_world.jpeg
 ---
 
-This is my first post, how exciting!
+Sample Post
+
+Not sure if will be using the blog just yet.
