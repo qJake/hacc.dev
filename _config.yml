@@ -21,12 +21,11 @@ description: Wall-mountable tablet interface for Home Assistant
 # List of links in the navigation bar
 navbar-links:
   FAQs: "faqs"
-  Resources:
+  Docs:
     - Installation: "test"
     - Usage: "test"
-    - Themes: "test"
+  Themes: "test"
   Support HACC: "support"
-  View on GitHub: "https://github.com/qJake/HADotNet.CommandCenter/"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
