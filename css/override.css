@@ -32,6 +32,10 @@ ol.toc
     display: inline-block;
     background-color: #EEE;
 }
+ol.toc ol
+{
+    list-style-type: none;
+}
 ol.toc:before
 {
     content: 'Table of Contents';
@@ -55,9 +59,13 @@ ol.toc~h4
 {
     position: absolute;
     left: -3.5rem;
-    top: 4px;
+    top: 1px;
     font-size: 24px;
     color: rgba(0,0,0,0.1);
+}
+h2 .anchor-permalink
+{
+    top: 4px;
 }
 .alert > p
 {
