@@ -24,6 +24,23 @@ a.panel-body:active
     text-decoration: none;
 }
 
+ol.toc
+{
+    list-style-type: none;
+    margin: 2rem 0 4rem;
+    padding: 1rem 1.5rem;
+    display: inline-block;
+    background-color: #EEE;
+}
+ol.toc:before
+{
+    content: 'Table of Contents';
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
 ol.toc~h2,
 ol.toc~h3,
 ol.toc~h4
