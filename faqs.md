@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: faq
 title: FAQs
 subtitle: All you ever wanted to know about HACC.
 ---
