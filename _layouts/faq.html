@@ -10,7 +10,7 @@ layout: base
 
       {% include toc.html html=content class="toc" h_min=2 h_max=2 ordered=true %}
       
-      {% include anchor_headings.html html=content %}
+      {% include anchor_headings.html html=content bodySuffix="<i class="fas fa-hashtag anchor-permalink"></i>" %}
 
 	    {% if page.comments %}
         <div class="disqus-comments">
