@@ -14,8 +14,8 @@ The following table lists *known working devices* that can run HACC.
 
 <div class="alert alert-info" role="alert">
     <p><b>Are you successfully using HACC on a device not listed here?</b></p>
-    <p><a href="https://github.com/qJake/hacc.dev/issues/new?assignees=qJake&labels=device+compatibility&template=device-compatibility-report.md&title=New+HACC+Compatible+Device" target="_blank">Please let us know!</a> We will add your device to this list!</p>
-    <p><em>(Or, if you know what you're doing, send us a <a href="https://github.com/qJake/hacc.dev/compare" target="_blank">pull request</a> with your device added to this page.)</em></p>
+    <p><a class="alert-link" href="https://github.com/qJake/hacc.dev/issues/new?assignees=qJake&labels=device+compatibility&template=device-compatibility-report.md&title=New+HACC+Compatible+Device" target="_blank">Please let us know!</a> We will add your device to this list!</p>
+    <p><em>(Or, if you know what you're doing, send us a <a class="alert-link" href="https://github.com/qJake/hacc.dev/compare" target="_blank">pull request</a> with your device added to this page.)</em></p>
 </div>
 
 ## How do I prevent my Android tablet from going to sleep?
