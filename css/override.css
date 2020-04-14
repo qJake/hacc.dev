@@ -46,3 +46,7 @@ ol.toc~h4
 {
     margin: 0.5rem 0 !important;
 }
+.alert .alert-link
+{
+    text-decoration: underline;
+}
