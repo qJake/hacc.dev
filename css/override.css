@@ -12,14 +12,14 @@
     justify-content: center;
     align-items: center;
 }
-a.panel
+a.panel-body
 {
     display: block;
 }
-a.panel,
-a.panel:hover,
-a.panel:visited,
-a.panel:active
+a.panel-body,
+a.panel-body:hover,
+a.panel-body:visited,
+a.panel-body:active
 {
     text-decoration: none;
 }
