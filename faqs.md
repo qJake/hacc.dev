@@ -4,16 +4,14 @@ title: FAQs
 subtitle: All you ever wanted to know about HACC.
 ---
 
-{% include toc.html html=content class=toc h_min=2 h_max=2 ordered=true %}
-
 ## What devices are compatible with HACC?
 
 The following table lists *known working devices* that can run HACC.
 
-
 | Manufacturer | Model  | OS             | Notes | Links                                                 |
 |--------------|--------|----------------|-------|-------------------------------------------------------|
 | Victbing     | V0010W | Android GO 8.1 |       | [Amazon](https://www.amazon.com/dp/B07S68Q35H/)       |
+
 
 ## How do I prevent my tablet from going to sleep?
 
