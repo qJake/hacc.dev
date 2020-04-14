@@ -4,7 +4,7 @@ title: FAQs
 subtitle: All you ever wanted to know about HACC.
 ---
 
-{:toc}
+{% include toc.html html=content class=toc h_min=2 h_max=2 ordered=true %}
 
 ## What devices are compatible with HACC?
 
