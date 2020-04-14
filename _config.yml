@@ -233,6 +233,10 @@ prose:
           label: "Publish"
           help: "Check to publish post, uncheck to hide."
 
+# Plugin stuff
+target-blank:
+    add_css_classes: external-link
+
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
