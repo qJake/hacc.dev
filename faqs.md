@@ -4,7 +4,9 @@ title: FAQs
 subtitle: All you ever wanted to know about HACC.
 ---
 
-## What devices are compatible with HACC?
+## Tablets and Device Information
+
+### What devices are compatible with HACC?
 
 The following table lists *known working devices* that can run HACC.
 
@@ -19,7 +21,7 @@ The following table lists *known working devices* that can run HACC.
     <p><em>(Or, if you know what you're doing, send us a <a class="alert-link" href="https://github.com/qJake/hacc.dev/compare" target="_blank">pull request</a> with your device added to this page.)</em></p>
 </div>
 
-## How do I prevent my Android tablet from going to sleep?
+### How do I prevent my Android tablet from going to sleep?
 
 You can prevent your Android-based tablet from going to sleep *as well as* protect the screen from wear and tear by using a ***kiosk browser***.
 
@@ -36,7 +38,7 @@ I like Fully Kiosk because it:
 
 Some of these features are restricted to "Plus", but it's only &euro;6.90 / $7.50 one-time to unlock.
 
-## How do I prevent my iPad from going to sleep?
+### How do I prevent my iPad from going to sleep?
 
 Refer to [this excellent article by HowToGeek](https://www.howtogeek.com/252670/how-to-put-an-ipad-into-kiosk-mode-restricting-it-to-a-single-app/){:target="_blank"} for the
 various options available to iOS users for restricting an iOS-based device to a single app.
@@ -47,3 +49,9 @@ Current options include:
 * Apple Configurator (requires a Mac device)
 
 You may need to [add a website icon to your home screen](https://support.apple.com/guide/iphone/bookmark-favorite-webpages-iph42ab2f3a7/ios#iph4f9a47bbc){:target="_blank"} first.
+
+## General Questions
+
+### What do I do if HACC doesn't support a certain entity or tile type?
+
+No problem - just [submit an enhancement request](https://github.com/qJake/HADotNet.CommandCenter/issues/new?assignees=qJake&labels=enhancement&template=enhancement-request.md&title=){:target="_blank"} on our GitHub page so that we can track the request!
