@@ -13,7 +13,7 @@ The following table lists *known working devices* that can run HACC.
 | Victbing     | V0010W | Android GO 8.1 |       | [Amazon](https://www.amazon.com/dp/B07S68Q35H/)       |
 
 
-## How do I prevent my tablet from going to sleep?
+## How do I prevent my Android tablet from going to sleep?
 
 You can prevent your Android-based tablet from going to sleep *as well as* protect the screen from wear and tear by using a ***kiosk browser***.
 
@@ -29,3 +29,15 @@ I like Fully Kiosk because it:
 * Can publish device sensor data via MQTT - great for Home Assistant!
 
 Some of these features are restricted to "Plus", but it's only &euro;6.90 / $7.50 one-time to unlock.
+
+## How do I prevent my iPad from going to sleep?
+
+Refer to [this excellent article by HowToGeek](https://www.howtogeek.com/252670/how-to-put-an-ipad-into-kiosk-mode-restricting-it-to-a-single-app/) for the
+various options available to iOS users for restricting an iOS-based device to a single app.
+
+Current options include:
+
+* Guided Access
+* Apple Configurator (requires a Mac device)
+
+You may need to [add a website icon to your home screen](https://support.apple.com/guide/iphone/bookmark-favorite-webpages-iph42ab2f3a7/ios#iph4f9a47bbc) first.
