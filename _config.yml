@@ -22,7 +22,7 @@ description: Wall-mountable tablet interface for Home Assistant
 navbar-links:
   FAQs: "faqs"
   Resources:
-    - Installation: "test"
+    - Installation: "install"
     - Usage: "test"
     - Themes: "test"
   Support HACC Development: "support"
