@@ -233,14 +233,9 @@ prose:
           label: "Publish"
           help: "Check to publish post, uncheck to hide."
 
-# Plugin stuff
-target-blank:
-    add_css_classes: external-link
-
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-target-blank
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189

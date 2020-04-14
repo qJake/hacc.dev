@@ -8,10 +8,10 @@ layout: base
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
-      {% include toc.html html=content class=toc h_min=2 h_max=2 ordered=true %}
+      {% include toc.html html=content class="toc" h_min=2 h_max=2 ordered=true %}
       
       {% include anchor_headings.html html=content %}
-      
+
 	    {% if page.comments %}
         <div class="disqus-comments">
 	        {% include disqus.html %}
