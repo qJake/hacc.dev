@@ -23,8 +23,8 @@ navbar-links:
   FAQs: "faqs"
   Docs:
     - Installation: "install"
-    - Usage: "test"
-  Themes: "test"
+    - Usage: "usage"
+  Themes: "themes"
   Support HACC: "support"
 
 # Image to show in the navigation bar - image must be a square (width = height)

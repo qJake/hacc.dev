@@ -12,3 +12,14 @@
     justify-content: center;
     align-items: center;
 }
+a.panel
+{
+    display: block;
+}
+a.panel,
+a.panel:hover,
+a.panel:visited,
+a.panel:active
+{
+    text-decoration: none;
+}
