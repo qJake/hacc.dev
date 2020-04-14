@@ -24,11 +24,12 @@ a.panel-body:active
     text-decoration: none;
 }
 
-.toc-item
+ol.toc~h2,
+ol.toc~h3,
+ol.toc~h4
 {
     position: relative;
 }
-
 .anchor-permalink:hover 
 {
     color: rgba(0,0,0,0.3);
