@@ -23,3 +23,21 @@ a.panel-body:active
 {
     text-decoration: none;
 }
+
+.toc-item
+{
+    position: relative;
+}
+
+.anchor-permalink:hover 
+{
+    color: rgba(0,0,0,0.3);
+}
+.anchor-permalink
+{
+    position: absolute;
+    left: -3.5rem;
+    top: 4px;
+    font-size: 24px;
+    color: rgba(0,0,0,0.1);
+}
