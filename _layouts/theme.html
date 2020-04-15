@@ -15,9 +15,9 @@ layout: base
         {% if theme == "" %}
             {% continue %}
         {% endif %}
-
-        {{ include themeitem.html name=theme.name img=theme.img assetname=theme.assetname }}
-    
+        <div class="col-md-3 col-sm-4 col-xs-12">
+          {{ include themeitem.html name=theme.name img=theme.img assetname=theme.assetname }}
+        </div>
       {{ endfor }}
   </div>
 </div>
