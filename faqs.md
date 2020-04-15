@@ -1,5 +1,5 @@
 ---
-layout: faq
+layout: tocpage
 title: FAQs
 subtitle: All you ever wanted to know about HACC.
 ---
@@ -10,9 +10,9 @@ subtitle: All you ever wanted to know about HACC.
 
 The following table lists *known working devices* that can run HACC.
 
-| Manufacturer | Model  | OS             | Notes | Links                                                                                                 |
-|--------------|--------|----------------|-------|-------------------------------------------------------------------------------------------------------|
-| Victbing     | V0010W | Android GO 8.1 |       | <i class="fab fa-amazon"></i> [Amazon](https://www.amazon.com/dp/B07S68Q35H/){:target="_blank"}       |
+| Manufacturer | Model  | OS             | Notes | Links                                                                                                                  |
+|--------------|--------|----------------|-------|------------------------------------------------------------------------------------------------------------------------|
+| Victbing     | V0010W | Android GO 8.1 |       | <i class="fab fa-amazon"></i> [Amazon](https://www.amazon.com/dp/B07S68Q35H/){:target="_blank"}{:rel="nofollow"}       |
 
 <p></p>
 <div class="alert alert-info" role="alert">
@@ -25,7 +25,7 @@ The following table lists *known working devices* that can run HACC.
 
 You can prevent your Android-based tablet from going to sleep *as well as* protect the screen from wear and tear by using a ***kiosk browser***.
 
-I recommend [Fully Kiosk Browser](https://www.ozerov.de/fully-kiosk-browser/){:target="_blank"}, however there are many alternatives.
+I recommend [Fully Kiosk Browser](https://www.ozerov.de/fully-kiosk-browser/){:target="_blank"}{:rel="nofollow"}, however there are many alternatives.
 
 I like Fully Kiosk because it:
 
@@ -40,7 +40,7 @@ Some of these features are restricted to "Plus", but it's only &euro;6.90 / $7.5
 
 ### How do I prevent my iPad from going to sleep?
 
-Refer to [this excellent article by HowToGeek](https://www.howtogeek.com/252670/how-to-put-an-ipad-into-kiosk-mode-restricting-it-to-a-single-app/){:target="_blank"} for the
+Refer to [this excellent article by HowToGeek](https://www.howtogeek.com/252670/how-to-put-an-ipad-into-kiosk-mode-restricting-it-to-a-single-app/){:target="_blank"}{:rel="nofollow"} for the
 various options available to iOS users for restricting an iOS-based device to a single app.
 
 Current options include:
@@ -48,10 +48,10 @@ Current options include:
 * Guided Access
 * Apple Configurator (requires a Mac device)
 
-You may need to [add a website icon to your home screen](https://support.apple.com/guide/iphone/bookmark-favorite-webpages-iph42ab2f3a7/ios#iph4f9a47bbc){:target="_blank"} first.
+You may need to [add a website icon to your home screen](https://support.apple.com/guide/iphone/bookmark-favorite-webpages-iph42ab2f3a7/ios#iph4f9a47bbc){:target="_blank"}{:rel="nofollow"} first.
 
 ## General Questions
 
 ### What do I do if HACC doesn't support a certain entity or tile type?
 
-No problem - just [submit an enhancement request](https://github.com/qJake/HADotNet.CommandCenter/issues/new?assignees=qJake&labels=enhancement&template=enhancement-request.md&title=){:target="_blank"} on our GitHub page so that we can track the request!
+No problem - just [submit an enhancement request](https://github.com/qJake/HADotNet.CommandCenter/issues/new?assignees=qJake&labels=enhancement&template=enhancement-request.md&title=){:target="_blank"}{:rel="nofollow"} on our GitHub page so that we can track the request!
