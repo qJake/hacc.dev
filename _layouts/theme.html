@@ -18,10 +18,12 @@ layout: base
       {%- if t.assetname -%} {% assign asset = t.assetname %} {% else %} {% assign asset = t.name %} {%- endif -%}
       <div class="col-md-3 col-sm-4 col-xs-12">
         <div class="panel panel-default">
-            <div class="panel-body">
+            <div class="panel-body text-center">
                 <h2>{{ t.name }}</h2>
                 <img src="/img/themes/{{ t.img }}.png" alt="{{ t.name }} image" />
-                <a href="/assets/themes/{{ asset }}.theme.json" target="_blank" class="btn btn-primary">Download</a>
+                <p>
+                  <a href="/assets/themes/{{ asset }}.theme.json" target="_blank" class="btn btn-primary" download>Download</a>
+                </p>
             </div>
         </div>
       </div>
