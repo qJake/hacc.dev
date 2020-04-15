@@ -3,7 +3,7 @@ layout: theme
 title: Themes
 subtitle: Style your HACC dashboard.
 themes:
-  - name: Tropical Day 1
+  - name: Tropical Day
     asset: tropical-day
 ---
 
