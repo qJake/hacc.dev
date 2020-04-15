@@ -30,6 +30,8 @@ Press **Install**.
 
 Once complete, the circle in the corner should be green to indicate the add-on is running.
 
+![Addon Installed](/img/install-4.png)
+
 If you scroll down to the **Log** section and press the **Refresh** button, you should see the HACC welcome message:
 
 ![HACC welcome screenshot](/img/install-3.png)
@@ -38,7 +40,7 @@ If you see this message, *congratulations!* Home Assistant Command Center is up 
 
 Now, you just need to navigate your browser to the *internal IP address* of your Home Assistant instance, followed by port 8095. For example: `http://192.168.0.6:8095/`
 
-*Note that this may be different from your Home Assistant base URL, if you normally access Home Assistant via a DNS name like `https://my-home-assistant.net/`.*
+*Note that this may be different from your Home Assistant external base URL. If you normally access Home Assistant via a DNS name like `https://my-home-assistant.net/`, you will still need to use the internal IP.*
 
 ## Advanced: Docker Container
 
@@ -46,7 +48,7 @@ Now, you just need to navigate your browser to the *internal IP address* of your
 
 HACC is also published as a Docker container with a number of tags for various OSes and architectures.
 
-**Image name: [`qjake/hacc`](https://hub.docker.com/r/qjake/hacc/tags){:target="_blank"}{:rel="nofollow"}**
+**Image name: [qjake/hacc](https://hub.docker.com/r/qjake/hacc/tags){:target="_blank"}{:rel="nofollow"}**
 
 The default (`latest`) tag will pull the most recent version running on *Debian (Buster Slim)* (AMD64 / x86-64).
 
@@ -56,19 +58,17 @@ If you are not familiar with Docker, it is highly recommended to use the Home As
 
 If you would like to learn about Docker basics, **[check out this introduction](https://docker-curriculum.com/#introduction){:target="_blank"}{:rel="nofollow"}**.
 
-### Container Information
+### Container Tags
 
-| Tag                                         | OS                   | Architecture  |
-|---------------------------------------------|----------------------|---------------|
-| `qjake/hacc:latest`                         | Debian (Buster Slim) | amd64         |
-| `qjake/hacc:latest-linux-debian-amd64`      | Debian (Buster Slim) | amd64         |
-| `qjake/hacc:latest-linux-ubuntu-amd64`      | Ubuntu (Bionic)      | amd64         |
-| `qjake/hacc:latest-linux-alpine-amd64`      | Alpine (3.10)        | amd64         |
-| `qjake/hacc:latest-linux-alpine-amd64`      | Alpine (3.10)        | amd64         |
-| `qjake/hacc:latest-linux-debian-arm32v7`    | Debian (Buster Slim) | arm32v7       |
-| `qjake/hacc:latest-linux-debian-arm64v8`    | Debian (Buster Slim) | arm64v8       |
+| Tag                                                             | OS                   | Architecture  |
+|-----------------------------------------------------------------|----------------------|---------------|
+| `qjake/hacc:latest`<br />`qjake/hacc:latest-linux-debian-amd64` | Debian (Buster Slim) | amd64         |
+| `qjake/hacc:latest-linux-ubuntu-amd64`                          | Ubuntu (Bionic)      | amd64         |
+| `qjake/hacc:latest-linux-alpine-amd64`                          | Alpine (3.10)        | amd64         |
+| `qjake/hacc:latest-linux-debian-arm32v7`                        | Debian (Buster Slim) | arm32v7       |
+| `qjake/hacc:latest-linux-debian-arm64v8`                        | Debian (Buster Slim) | arm64v8       |
 
-### Running
+### Running HACC
 
 Pull the container image:
 
@@ -88,7 +88,7 @@ Next, run the container:
 
 **`qjake/hacc`** This is the image's tag you want to run. This can be as simple as `qjake/hacc`, or a specific OS like `qjake/hacc:latest-linux-alpine-amd64`. It's up to you!
 
-### Updating
+### Updating HACC
 
 As long as you have persisted your config volume using the `-v` parameter, your configuration should persist while upgrading.
 
@@ -103,3 +103,19 @@ Assuming you named your container `hacc` from above, simply run:
     docker start hacc
 
 You should now be on the latest version!
+
+### Removing HACC
+
+You want to delete HACC? Really? :( Okay.
+
+Stop your container, remove it, and remove the docker volume associated with it:
+
+    docker stop hacc
+    docker rm hacc
+    docker volume rm haccdata
+
+And if you don't even want the image in your image store:
+
+    docker image rm qjake/hacc
+
+Poof! It's gone. Sorry to see you go!

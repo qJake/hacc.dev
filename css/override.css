@@ -67,6 +67,11 @@ h2 .anchor-permalink
 {
     top: 4px;
 }
+h4 .anchor-permalink
+{
+    top: -3px;
+}
+
 .alert > p
 {
     margin: 0.5rem 0 !important;
