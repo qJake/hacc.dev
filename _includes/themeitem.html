@@ -1,0 +1,9 @@
+{% if include.assetname %} {% assign asset = include.assetname %} {% else %} {% assign asset = include.name %} {% endif %}
+
+<div class="panel panel-default">
+    <div class="panel-body">
+        <h2>{{ include.name }}</h2>
+        <img src="/img/themes/{{ include.img }}.png" alt="{{ include.name }} image" />
+        <a href="/assets/themes/{{ asset }}.theme.json" target="_blank" class="btn btn-primary">Download</a>
+    </div>
+</div>
