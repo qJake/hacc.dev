@@ -42,6 +42,11 @@ Now, you just need to navigate your browser to the *internal IP address* of your
 
 *Note that this may be different from your Home Assistant external base URL. If you normally access Home Assistant via a DNS name like `https://my-home-assistant.net/`, you will still need to use the internal IP.*
 
+<div class="alert alert-success" role="alert">
+    <p><b>Up and running?</b></p>
+    <p>Great! You should check out our <b><a href="/usage">usage guide</a></b> next &ndash; it has first-time setup instructions, and information on how to set up your first page!</p>
+</div>
+
 ## Advanced: Docker Container
 
 <img src="/img/docker-logo.png" height="48" alt="Docker Logo" />

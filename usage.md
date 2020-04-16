@@ -125,3 +125,46 @@ If you have a bunch of new tiles (and they are all stacked on top of each other 
     <p><b>Layout Reset Warning</b></p>
     <p>Pressing the "Reset Layout" button will move ALL of your tiles, even ones that you placed by hand. If you don't want to lose your existing layout, don't use "Reset Layout" (or just don't press "Save Layout" to save your changes).</p>
 </div>
+
+## Tiles
+
+Now that you've configured your first page, and you have your layout all set up,  it's time to add some tiles!
+
+On the "Pages" screen, click the "**Manage *n* Tiles**" button to open the tile list for that page.
+
+![tile list](/img/tilelist.png)
+
+Click **"Add Tile"** to add your first tile.
+
+Select the tile type you want to add. The entities which are supported by that tile are listed on each card.
+
+<div class="alert alert-info" role="alert">
+    <p><b>Tip</b></p>
+    <p>The Date Tile is a good first tile to add! It displays the current date and time.</p>
+</div>
+
+### Tile Types
+
+Here is a brief listing of all of the types of tiles we support.
+
+#### Home Assistant Tiles
+
+| Tile Name | Supported Entities | Description |
+|---|---|---|
+| State    | *All Types* | Displays an entity's current state text. Contains options for overriding on/off text and rounding decimal values. |
+| Weather  | `sensor` | Displays a formatted weather tile. Recommended minimum size is 2x2. (*Note: The `weather` entity type is not supported, you must supply separate sensors for each value.*) |
+| Switch   | `switch`, `group`, `cover`, `fan`, `remote`, `media_player`, `input_boolean` | Toggles the switch on and off by calling the respective `turn_on` or `turn_off` service. |
+| Light    | `light` | Turns lights on and off. (*A future update will allow for brightness and limited color control.*) |
+| Person   | `person`, `device_tracker` | Displays the person's entity picture and their current location / state value. |
+| Camera   | `camera` | Displays a camera feed. |
+| Scene    | `scene` | Activates a scene. |
+| Media    | `media_player` | Displays the media image preview, and optionally, overlays the device name and media title. |
+| Calendar | `calendar` | Displays upcoming events. Only supports Google Calendar at this time. (*Note: Not supported in Supervisor Add-on mode due to API limitations.*) |
+
+#### Utility Tiles
+| Tile Name | Description |
+|---|---|
+| Navigation | Allows navigation between pages, and refreshing of the current page. |
+| Blank      | A spacer tile. Does not render anything, but can push other tiles down (or over) since the layout engine does not allow for arbitrary vertical space between tiles. |
+| Label      | A tile that renders plain text. Useful for "title tiles". Use the custom CSS property box to change the font, color, size, or other attributes of the text. |
+| Date       | Displays the current date and time. Date and time formatting can be customized / localized, and a timezone can be selected. |
