@@ -162,6 +162,7 @@ Here is a brief listing of all of the types of tiles we support.
 | Calendar | `calendar` | Displays upcoming events. Only supports Google Calendar at this time. (*Note: Not supported in Supervisor Add-on mode due to API limitations.*) |
 
 #### Utility Tiles
+
 | Tile Name | Description |
 |---|---|
 | Navigation | Allows navigation between pages, and refreshing of the current page. |
