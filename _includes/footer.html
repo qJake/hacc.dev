@@ -2,9 +2,6 @@
   <div class="container beautiful-jekyll-footer">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <p class="text-center">
-          <a href="{{site.github.repository_url}}/blob/master/{{page.path}}" target="_blank">Edit this page</a>
-        </p>
         <ul class="list-inline text-center footer-links">
           {%- for link in site.social-network-links -%}
             {%- assign curkey = link[0] -%}
@@ -46,7 +43,8 @@
       <p class="theme-by text-muted">
         Theme by
         <a target="_blank" rel="nofollow" href="https://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a><br />
-        Thanks to allejo for <a target="_blank" rel="nofollow" href="https://github.com/allejo/jekyll-anchor-headings">anchor headings</a> and <a target="_blank" rel="nofollow" href="https://github.com/allejo/jekyll-toc">table of contents</a>
+        Thanks to allejo for <a target="_blank" rel="nofollow" href="https://github.com/allejo/jekyll-anchor-headings">anchor headings</a> and <a target="_blank" rel="nofollow" href="https://github.com/allejo/jekyll-toc">table of contents</a><br />
+        <small>(Want to <a href="{{site.github.repository_url}}/blob/master/{{page.path}}" target="_blank" rel="nofollow">edit this page</a>?)</small>
       </p>
       </div>
     </div>

@@ -1,3 +1,7 @@
+body > footer
+{
+    padding: 20px 0;
+}
 .full-header.colorized-header
 {
     background: none;
