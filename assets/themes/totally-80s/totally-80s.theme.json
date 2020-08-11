@@ -1,0 +1,20 @@
+{
+  "Page": {
+    "BackgroundColor": "#222C3C",
+    "BackgroundImageUrl": null,
+    "BackgroundImageBlendMode": null,
+    "BackgroundGradient": "linear-gradient(34deg, rgba(235,199,36,1) 0%, rgba(249,114,255,1) 20%, rgba(26,200,255,1) 100%);",
+    "PageFontFace": "Open Sans",
+    "PageFontWeight": "400",
+    "PageFontSize": "12px"
+  },
+  "Tiles": {
+    "TileBackgroundColor": "rgba(255,255,255,0.7)",
+    "TileFontColor": "#1391B9",
+    "TileBorderRadius": 8,
+    "TileBoxShadow": "0px 2px 3px 1px rgba(0,0,0,0.1);",
+    "TileDefaultOnColor": "#ebc724",
+    "TileDefaultOffColor": "#1ac8ff"
+  },
+  "AdditionalCss": ".tile > span\r\n{\r\n  text-shadow: 1px 1px 1px rgba(255,255,255,0.8);\r\n}"
+}

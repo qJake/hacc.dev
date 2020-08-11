@@ -5,6 +5,12 @@ subtitle: Style your HACC dashboard.
 themes:
   - name: Tropical Day
     asset: tropical-day
+  - name: Slate Night
+    asset: slate-night
+  - name: Totally 80's
+    asset: totally-80s
+  - name: Mono Bubbles
+    asset: mono-bubbles
 ---
 
 <p class="lead">Select from one of the themes below.</p>

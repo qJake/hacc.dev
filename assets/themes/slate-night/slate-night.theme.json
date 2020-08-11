@@ -1,0 +1,20 @@
+{
+  "Page": {
+    "BackgroundColor": "#222C3C",
+    "BackgroundImageUrl": null,
+    "BackgroundImageBlendMode": null,
+    "BackgroundGradient": null,
+    "PageFontFace": "Open Sans",
+    "PageFontWeight": "400",
+    "PageFontSize": "12px"
+  },
+  "Tiles": {
+    "TileBackgroundColor": "#40526F",
+    "TileFontColor": "#BECDDF",
+    "TileBorderRadius": 0,
+    "TileBoxShadow": null,
+    "TileDefaultOnColor": "#FAFAFA",
+    "TileDefaultOffColor": "#6986B4"
+  },
+  "AdditionalCss": null
+}
