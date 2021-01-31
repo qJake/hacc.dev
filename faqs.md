@@ -10,9 +10,10 @@ subtitle: All you ever wanted to know about HACC.
 
 The following table lists *known working devices* that can run HACC.
 
-| Manufacturer | Model  | OS             | Notes | Links                                                                                                                  |
-|--------------|--------|----------------|-------|------------------------------------------------------------------------------------------------------------------------|
-| Victbing     | V0010W | Android GO 8.1 |       | <i class="fab fa-amazon"></i> [Amazon](https://www.amazon.com/dp/B07S68Q35H/){:target="_blank"}{:rel="nofollow"}       |
+| Manufacturer | Model         | OS             | Notes | Links                                                                                                                  |
+|--------------|---------------|----------------|-------|------------------------------------------------------------------------------------------------------------------------|
+| Vankyo       | MatrixPad S10 | Android 9.0    |       | <i class="fab fa-amazon"></i> [Amazon](https://www.amazon.com/dp/B0869DPZJ3/){:target="_blank"}{:rel="nofollow"}       |
+| Victbing     | V0010W        | Android GO 8.1 |       | <i class="fab fa-amazon"></i> [Amazon](https://www.amazon.com/dp/B07S68Q35H/){:target="_blank"}{:rel="nofollow"}       |
 
 <p></p>
 <div class="alert alert-info" role="alert">
