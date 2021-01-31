@@ -4,50 +4,7 @@ title: Installation
 subtitle: Get yourself up and running!
 ---
 
-## Easy: Home Assistant Supervisor Addon
-
-HACC is available as a [Home Assistant Add-on](https://www.home-assistant.io/addons/){:target="_blank"}{:rel="nofollow"}, but it is not listed in the official store, or the [Community Add-ons](https://addons.community/){:target="_blank"}{:rel="nofollow"} project.
-
-Follow these instructions to add the HACC repository to your add-on list in your Home Assistant instance.
-
-First, in Home Assistant, navigate to **Supervisor** &raquo; **Add-on Store**.
-
-In the **Add new repository by URL** box, enter the following URL:
-
-    https://github.com/qJake/hassio-addon-repository
-
-![Addon Repo URL](/img/install-1.png)
-
-Then, press **Add**.
-
-The page will reload. Scroll all the way to the bottom, and you should see a new category called **qJake's Home Assistant Add-ons**.
-
-![Custom Addon Store](/img/install-2.png)
-
-Select **HA Command Center**. The add-on detail page should load.
-
-Press **Install**.
-
-Once complete, the circle in the corner should be green to indicate the add-on is running.
-
-![Addon Installed](/img/install-4.png)
-
-If you scroll down to the **Log** section and press the **Refresh** button, you should see the HACC welcome message:
-
-![HACC welcome screenshot](/img/install-3.png)
-
-If you see this message, *congratulations!* Home Assistant Command Center is up and running!
-
-Now, you just need to navigate your browser to the *internal IP address* of your Home Assistant instance, followed by port 8095. For example: `http://192.168.0.6:8095/`
-
-*Note that this may be different from your Home Assistant external base URL. If you normally access Home Assistant via a DNS name like `https://my-home-assistant.net/`, you will still need to use the internal IP.*
-
-<div class="alert alert-success" role="alert">
-    <p><b>Up and running?</b></p>
-    <p>Great! You should check out our <b><a href="/usage">usage guide</a></b> next &ndash; it has first-time setup instructions, and information on how to set up your first page!</p>
-</div>
-
-## Advanced: Docker Container
+## Docker Container
 
 <img src="/img/docker-logo.png" height="48" alt="Docker Logo" />
 
@@ -124,3 +81,11 @@ And if you don't even want the image in your image store:
     docker image rm qjake/hacc
 
 Poof! It's gone. Sorry to see you go!
+
+## Other Webserver
+
+HACC is based on ASP.NET Core 3.1, and thus, can run in any environment that ASP.NET Core supports, including IIS, Linux (standalong and nginx), and more.
+
+For more information, refer to the Microsoft documentation for ASP.NET Core:
+
+* [Host ASP.NET Core on Linux with Nginx](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-nginx?view=aspnetcore-3.1)

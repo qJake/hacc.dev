@@ -53,10 +53,6 @@ You may need to [add a website icon to your home screen](https://support.apple.c
 
 ## General Questions
 
-### Why is a long-lived access token (LLAT) required in Supervisor mode?
-
-The token that the Supervisor provides is only able to make server-to-server REST API calls. HACC makes a websocket connection directly from the tablet's browser interface to Home Assistant for top speed and performance when operating the dashboard. Unfortunately the Websocket API only accepts LLATs as security tokens, therefore we require an LLAT from the user in order to use the Websocket API.
-
 ### What do I do if HACC doesn't support a certain entity or tile type?
 
 No problem - just [submit an enhancement request](https://github.com/qJake/HADotNet.CommandCenter/issues/new?assignees=qJake&labels=enhancement&template=enhancement-request.md&title=){:target="_blank"}{:rel="nofollow"} on our GitHub page so that we can track the request!
