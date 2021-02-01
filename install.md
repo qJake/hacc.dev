@@ -57,19 +57,24 @@ Next, run the container:
 
 **`qjake/hacc`** This is the image's tag you want to run. This can be as simple as `qjake/hacc`, or a specific OS like `qjake/hacc:latest-linux-alpine-amd64`. It's up to you!
 
+#### Optional Arguments
+
+**`--restart always`** - Add this to have the container always restart if it is stopped, except if it is stopped manually. [Refer to the Docker documentation on restart policies.](https://docs.docker.com/config/containers/start-containers-automatically/)
+
 ### Updating HACC
 
 As long as you have persisted your config volume using the `-v` parameter, your configuration should persist while upgrading.
 
 Still, on the admin homepage, you can press **Export Configuration** to save a copy of your config just in case.
 
-To update HACC, you need to stop the container, update the image, and restart it.
+To update HACC, you need to stop **and remove** the container, update the image, and re-run it.
 
 Assuming you named your container `hacc` from above, simply run:
 
     docker stop hacc
+    docker rm hacc
     docker pull qjake/hacc
-    docker start hacc
+    [your previous docker run command, e.g.] docker run --name hacc -p 8095:8095 -v haccdata:/app/data qjake/hacc
 
 You should now be on the latest version!
 
