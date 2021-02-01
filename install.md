@@ -14,7 +14,7 @@ Anyone who is on an older version that is still running as an addon, should cons
 
 <img src="/img/docker-logo.png" height="48" alt="Docker Logo" />
 
-HACC is also published as a Docker container with a number of tags for various OSes and architectures.
+HACC is published as a Docker container with a number of tags for various OSes and architectures.
 
 **Image name: [qjake/hacc](https://hub.docker.com/r/qjake/hacc/tags){:target="_blank"}{:rel="nofollow"}**
 
@@ -75,7 +75,7 @@ You should now be on the latest version!
 
 ### Removing HACC
 
-You want to delete HACC? Really? ☹ Okay.
+You want to delete HACC? Really? <span class="emj">☹</span> Okay.
 
 Stop your container, remove it, and remove the docker volume associated with it:
 

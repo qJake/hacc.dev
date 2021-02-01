@@ -2,6 +2,10 @@ body > footer
 {
     padding: 20px 0;
 }
+.emj
+{
+    font-family: "Segoe UI Emoji";
+}
 .full-header.colorized-header
 {
     background: none;
