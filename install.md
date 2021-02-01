@@ -36,7 +36,7 @@ Pull the container image:
 
 Next, run the container:
 
-    docker run --name hacc -p 8095:8095 -v haccdata:/app qjake/hacc
+    docker run --name hacc -p 8095:8095 -v haccdata:/app/data qjake/hacc
 
 #### Argument Breakdown
 
@@ -44,7 +44,7 @@ Next, run the container:
 
 **`-p 8095:8095`** maps the app's default web port 8095 to the same "external" port on the computer where Docker is running. If you want to change the outside port, for example if you want to run HACC on port 80, change the first port, e.g. `-p 80:8095`
 
-**`-v haccdata:/app`** persists HACC's configuration and settings to a *docker volume* called "haccdata". If you would like to store your HACC configuration somewhere else, you can change the path on the left, for example:
+**`-v haccdata:/app/data`** persists HACC's configuration and settings to a *docker volume* called "haccdata". If you would like to store your HACC configuration somewhere else, you can change the path on the left, for example:
 
 * Linux: `-v /home/username/hacc:/app/data`
 * Windows: `-v //c/users/[username]/hacc:/app/data`
