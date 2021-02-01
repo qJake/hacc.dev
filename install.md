@@ -4,6 +4,12 @@ title: Installation
 subtitle: Get yourself up and running!
 ---
 
+## Supervisor Addon
+
+At this time, HACC cannot run as a supervisor addon.
+
+Anyone who is on an older version that is still running as an addon, should consider upgrading to a standalone Docker installation. To do this, simply export your configuration, remove the addon, create a Docker container (instructions below), and import the same configuration.
+
 ## Docker Container
 
 <img src="/img/docker-logo.png" height="48" alt="Docker Logo" />
@@ -69,7 +75,7 @@ You should now be on the latest version!
 
 ### Removing HACC
 
-You want to delete HACC? Really? :( Okay.
+You want to delete HACC? Really? ☹ Okay.
 
 Stop your container, remove it, and remove the docker volume associated with it:
 
