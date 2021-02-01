@@ -27,8 +27,6 @@ If you would like to learn about Docker basics, **[check out this introduction](
 | `qjake/hacc:latest`<br />`qjake/hacc:latest-linux-debian-amd64` | Debian (Buster Slim) | amd64         |
 | `qjake/hacc:latest-linux-ubuntu-amd64`                          | Ubuntu (Bionic)      | amd64         |
 | `qjake/hacc:latest-linux-alpine-amd64`                          | Alpine (3.10)        | amd64         |
-| `qjake/hacc:latest-linux-debian-arm32v7`                        | Debian (Buster Slim) | arm32v7       |
-| `qjake/hacc:latest-linux-debian-arm64v8`                        | Debian (Buster Slim) | arm64v8       |
 
 ### Running HACC
 
@@ -46,7 +44,10 @@ Next, run the container:
 
 **`-p 8095:8095`** maps the app's default web port 8095 to the same "external" port on the computer where Docker is running. If you want to change the outside port, for example if you want to run HACC on port 80, change the first port, e.g. `-p 80:8095`
 
-**`-v haccdata:/app`** persists HACC's configuration and settings to a *docker volume* called "haccdata". If you would like to store your HACC configuration somewhere else, you can change the path on the left, for example, on a Linux-based system, to store HACC's data in your home directory, use `-v /home/username/hacc:/app`.
+**`-v haccdata:/app`** persists HACC's configuration and settings to a *docker volume* called "haccdata". If you would like to store your HACC configuration somewhere else, you can change the path on the left, for example:
+
+* Linux: `-v /home/username/hacc:/app/data`
+* Windows: `-v //c/users/[username]/hacc:/app/data`
 
 **`qjake/hacc`** This is the image's tag you want to run. This can be as simple as `qjake/hacc`, or a specific OS like `qjake/hacc:latest-linux-alpine-amd64`. It's up to you!
 
