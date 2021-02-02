@@ -22,7 +22,7 @@ The default (`latest`) tag will pull the most recent version running on *Debian 
 
 ### New to Docker?
 
-If you are not familiar with Docker, it is highly recommended to use the Home Assistant Supervisor Add-on interface above. If you installed *Home Assistant Core* instead of the full *Home Assistant*, we recommend upgrading to the Supervisor-enabled version that has built-in support for add-ons.
+Docker is a *container platform*. This means, in simple terms, that small virtual servers can run on your computer in the background and do cool things... like install and run HACC!
 
 If you would like to learn about Docker basics, **[check out this introduction](https://docker-curriculum.com/#introduction){:target="_blank"}{:rel="nofollow"}**.
 
@@ -97,6 +97,8 @@ Poof! It's gone. Sorry to see you go!
 ## Other Webserver
 
 HACC is based on ASP.NET Core 3.1, and thus, can run in any environment that ASP.NET Core supports, including IIS, Linux (standalong and nginx), and more.
+
+Note that you may need to build the project yourself if you want to use your own webserver. With IIS, for example, you can open the project in Visual Studio, right-click the project, and select Publish &gt; IIS Website.
 
 For more information, refer to the Microsoft documentation for ASP.NET Core:
 
