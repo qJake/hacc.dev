@@ -8,7 +8,9 @@ subtitle: The defninitive user guide.
 
 Welcome to *Home Assistant Command Center*! You're just a few steps away from supercharging your home with an awesome wall tablet experience.
 
-If you have not installed HACC yet (either via *Docker* or as a *Supervisor Add-on*), please refer to the **[Installation Guide](/install)** first!
+If you have not installed HACC yet, please refer to the **[Installation Guide](/install)** first!
+
+Or, if you don't even have a wall tablet yet, check out our **[FAQ page](/faqs)** where you can find a list of supported devices - some for under $100 USD!
 
 ## Initial Setup
 
@@ -18,7 +20,7 @@ You'll need to fill out your **Home Assistant Base URL** and generate yourself a
 
 ![system-setup](/img/setup.png)
 
-**Base URL**: (*For Non-Supervisor/Addon Installations Only*) This is your Home Assistant URL. It can be a publicly accessible URL, or a private URL as long as HACC (your tablet device) can reach it over the local network at that IP address or DNS name.
+**Base URL**: This is your Home Assistant URL. It can be a publicly accessible URL, or a private URL as long as HACC (your tablet device) can reach it over the local network at that IP address or DNS name.
 
 **Long-Lived Access Token**: Generate this via the following instructions:
 1. Navigate to Home Assistant > Your User Account (very bottom link in the sidebar, your username)
@@ -37,7 +39,7 @@ After pressing **Save Settings**, you can now proceed to create some pages and t
 
 Pages are a way to group related tiles, and are exactly what the name implies &ndash; different web pages that you can navigate between.
 
-When you first load HACC, or you upgrade HACC from a previous version that did not support Pages, HACC automatically generates a "Default" first page for you.
+When you first load HACC, or you upgrade HACC from a previous version that did not support pages, HACC automatically generates a "Default" first page for you.
 
 ![pages 1](/img/guide-1.png)
 
@@ -78,6 +80,12 @@ Each page specifies its layout, which is the dimensions of the screen (assuming 
 
 With the introduction of pages, each page can have totally different layout and tile settings, so you can use one HACC instance for multiple different tablet devices!
 
+<div class="alert alert-info" role="alert">
+    <p><b>Not sure what resolution your device is?</b></p>
+    <p>No problem. Add a Navigation tile, and set the type to ***debug***. When you click the tile on your tablet, it will pop up some debugging information about the tablet that you can take a picture or screenshot of, to help you set your layout options correctly.</p>
+</div>
+
+
 ![layout](/img/layout.png)
 
 | Setting                      | Description   |
@@ -102,7 +110,14 @@ If my device is 536x854 (or can scale to that resolution), I can fit 8 rows and 
 
 (In the example above, replace *100* with your tile size and *6* with your tile spacing.)
 
-Play around with the values until you find something that works for you and your tablet device!
+Another example - if my device has a resolution of 728x1134, then I can choose slightly larger tile sizes. 
+
+* **5** &times; (134 + 6) + 6 = 706
+* **8** &times; (134 + 6) + 6 = 1126
+
+With this example, the dashboard width doesn't match the device exactly. Don't worry, HACC will auto-center the dashboard UI for you.
+
+In the end, just play around with the values until you find something that works for you and your tablet device!
 
 <div class="alert alert-warning" role="alert">
     <p><b>Set your Layout Settings First!</b></p>
@@ -159,13 +174,13 @@ Here is a brief listing of all of the types of tiles we support.
 | Camera   | `camera` | Displays a camera feed. |
 | Scene    | `scene` | Activates a scene. |
 | Media    | `media_player` | Displays the media image preview, and optionally, overlays the device name and media title. |
-| Calendar | `calendar` | Displays upcoming events. Only supports Google Calendar at this time. (*Note: Not supported in Supervisor Add-on mode due to API limitations.*) |
+| Calendar | `calendar` | Displays upcoming events. Only supports Google Calendar at this time. |
 
 #### Utility Tiles
 
 | Tile Name | Description |
 |---|---|
-| Navigation | Allows navigation between pages, and refreshing of the current page. |
+| Navigation | Allows navigation between pages, and refreshing of the current page. Also contains a debug mode for help with device settings and compatibility. |
 | Blank      | A spacer tile. Does not render anything, but can push other tiles down (or over) since the layout engine does not allow for arbitrary vertical space between tiles. |
 | Label      | A tile that renders plain text. Useful for "title tiles". Use the custom CSS property box to change the font, color, size, or other attributes of the text. |
 | Date       | Displays the current date and time. Date and time formatting can be customized / localized, and a timezone can be selected. |
