@@ -82,7 +82,7 @@ With the introduction of pages, each page can have totally different layout and 
 
 <div class="alert alert-info" role="alert">
     <p><b>Not sure what resolution your device is?</b></p>
-    <p>No problem. Add a Navigation tile, and set the type to ***debug***. When you click the tile on your tablet, it will pop up some debugging information about the tablet that you can take a picture or screenshot of, to help you set your layout options correctly.</p>
+    <p>No problem. Add a Navigation tile, and set the type to <b><i>debug</i></b>. When you click the tile on your tablet, it will pop up some debugging information about the tablet that you can take a picture or screenshot of, to help you set your layout options correctly.</p>
 </div>
 
 
