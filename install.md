@@ -20,6 +20,10 @@ HACC is published as a Docker container with a number of tags for various OSes a
 
 The default (`latest`) tag will pull the most recent version running on *Debian (Buster Slim)* (AMD64 / x86-64).
 
+<div class="alert alert-warning" role="alert">
+    <p><b>Note:</b> Windows containers are not currently supported.</p>
+</div>
+
 ### New to Docker?
 
 Docker is a *container platform*. This means, in simple terms, that small virtual servers can run on your computer in the background and do cool things... like install and run HACC!
